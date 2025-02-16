@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биомы и структуры Minecraft</title>
+    <link rel="stylesheet" href="assets/styles/info/styles.css">
+</head>
+<body>
+    <header class="info-header" id="#top">
+        <h1 class="header-title">Справочник по Minecraft</h1>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Поиск...">
+        
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z"/></svg>
+            </button>
+        
+            <button id="clear-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16ZM4.22 4.22a.75.75 0 0 1 1.06 0L8 6.94l2.72-2.72a.75.75 0 1 1 1.06 1.06L9.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L8 9.06l-2.72 2.72a.75.75 0 0 1-1.06-1.06L6.94 8L4.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <sidebar>
+        <nav id="navigator">
+            <div class="nav-header">
+                <a href="index.html" style="font-size: 30px; color: inherit; text-decoration: none;">SCATcraft</a>
+                <button id="menu-toggle">
+                    ☰
+                </button>
+            </div>
+            
+            <div class="nav-link-container">
+                <a href="#biomes-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/biomes.menu.jpg" alt="biomes">
+                    <span>Биомы</span>
+                </a>
+                <a href="#structures-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/structures_menu.jpg" alt="structures">
+                    <span>Структуры</span>
+                </a>
+                <a href="#mobs-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/mobs_menu.jpg" alt="mobs">
+                    <span>Мобы</span>
+                </a>
+                <a href="#gamerules-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/gamerules_menu.png" alt="effects">
+                    <span>Gamerules (Правила мира)</span>
+                </a>
+                <a href="#ores-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/ores_menu.jpg" alt="ores">
+                    <span>Руды</span>
+                </a>
+                <a href="#effects-table" class="nav-link">
+                    <img class="menu-icon" src="assets/img/icons/effects_menu.png" alt="effects">
+                    <span>Эффекты</span>
+                </a>
+            </div>
+        </nav>
+    </sidebar>
+
+    <main>
+        <p id="no-results" style="display: none; font-size: 25px; text-align: center; margin-top: 350px;">
+            Нет совпадений
+        </p>
+        
+        <section class="info-section">
+            <h2 class="invise">Биомы</h2>
+            <table id="biomes-table">
+                <thead>
+                    <tr>
+                        <th>Название (на русском)</th>
+                        <th>ID</th>
+                        <th>Описание</th>
+                        <th>Издания</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Биомы -->
+                    <tr>
+                        <td>Заснеженные равнины</td>
+                        <td>minecraft:snowy_plains</td>
+                        <td>Равнины, покрытые снегом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Ледяные пики</td>
+                        <td>minecraft:ice_spikes</td>
+                        <td>Биом с высокими ледяными пирамидами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Заснеженная тайга</td>
+                        <td>minecraft:snowy_taiga</td>
+                        <td>Тайга, покрытая снегом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Глубокий замёрзший океан</td>
+                        <td>minecraft:deep_frozen_ocean</td>
+                        <td>Глубокий океан, покрытый льдом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Замёрзший океан</td>
+                        <td>minecraft:frozen_ocean</td>
+                        <td>Океан, покрытый льдом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Горная роща</td>
+                        <td>minecraft:mountain_grove</td>
+                        <td>Горный биом с рощей деревьев.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Снежные склоны</td>
+                        <td>minecraft:snowy_slopes</td>
+                        <td>Снежные горные склоны.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Зубчатые вершины</td>
+                        <td>minecraft:jagged_peaks</td>
+                        <td>Высокие зубчатые горы.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Оледенелые вершины</td>
+                        <td>minecraft:frozen_peaks</td>
+                        <td>Оледеневшие горные вершины.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Замёрзшая река</td>
+                        <td>minecraft:frozen_river</td>
+                        <td>Река, покрытая льдом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Заснеженный пляж</td>
+                        <td>minecraft:snowy_beach</td>
+                        <td>Пляж, покрытый снегом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Тайга</td>
+                        <td>minecraft:taiga</td>
+                        <td>Хвойный лес с елями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Подзолистая сосновая тайга</td>
+                        <td>minecraft:old_growth_pine_taiga</td>
+                        <td>Тайга с большими соснами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Подзолистая еловая тайга</td>
+                        <td>minecraft:old_growth_spruce_taiga</td>
+                        <td>Тайга с большими елями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Холодный океан</td>
+                        <td>minecraft:cold_ocean</td>
+                        <td>Океан с холодной водой.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Глубокий холодный океан</td>
+                        <td>minecraft:deep_cold_ocean</td>
+                        <td>Глубокий океан с холодной водой.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Горные луга</td>
+                        <td>minecraft:mountain_meadow</td>
+                        <td>Луга среди гор.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Выветренные холмы</td>
+                        <td>minecraft:windswept_hills</td>
+                        <td>Холмы с сильным ветром.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Выветренный лес</td>
+                        <td>minecraft:windswept_forest</td>
+                        <td>Лес с сильным ветром.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Выветренные гравийные холмы</td>
+                        <td>minecraft:windswept_gravelly_hills</td>
+                        <td>Гравийные холмы с сильным ветром.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Каменистый берег</td>
+                        <td>minecraft:stony_shore</td>
+                        <td>Каменистый берег океана.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Равнины</td>
+                        <td>minecraft:plains</td>
+                        <td>Открытые просторы с травой и цветами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Подсолнечниковые равнины</td>
+                        <td>minecraft:sunflower_plains</td>
+                        <td>Равнины с подсолнухами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Лес</td>
+                        <td>minecraft:forest</td>
+                        <td>Плотный лес с разнообразными деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Цветочный лес</td>
+                        <td>minecraft:flower_forest</td>
+                        <td>Лес с большим количеством цветов.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Вишнёвая роща</td>
+                        <td>minecraft:cherry_grove</td>
+                        <td>Роща с вишнёвыми деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Березняк</td>
+                        <td>minecraft:birch_forest</td>
+                        <td>Лес, заполненный берёзами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Многолетний березняк</td>
+                        <td>minecraft:old_growth_birch_forest</td>
+                        <td>Березняк с большими деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Тёмный лес</td>
+                        <td>minecraft:dark_forest</td>
+                        <td>Биом с большими темными дубами и грибами-гигантами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Болото</td>
+                        <td>minecraft:swamp</td>
+                        <td>Влажный биом с грязью и лианами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Мангровое болото</td>
+                        <td>minecraft:mangrove_swamp</td>
+                        <td>Болото с мангровыми деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Джунгли</td>
+                        <td>minecraft:jungle</td>
+                        <td>Густой тропический лес с большими деревьями и лианами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Бамбуковые джунгли</td>
+                        <td>minecraft:bamboo_jungle</td>
+                        <td>Джунгли с бамбуком.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Редеющие джунгли</td>
+                        <td>minecraft:sparse_jungle</td>
+                        <td>Разреженная версия джунглей.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Грибные поля</td>
+                        <td>minecraft:mushroom_fields</td>
+                        <td>Остров, полностью покрытый грибами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Океан</td>
+                        <td>minecraft:ocean</td>
+                        <td>Обширная водная поверхность.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Глубокий океан</td>
+                        <td>minecraft:deep_ocean</td>
+                        <td>Глубокая часть океана.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Умеренный океан</td>
+                        <td>minecraft:lukewarm_ocean</td>
+                        <td>Океан с умеренной температурой воды.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Глубокий умеренный океан</td>
+                        <td>minecraft:deep_lukewarm_ocean</td>
+                        <td>Глубокий океан с умеренной температурой воды.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Каменистые вершины</td>
+                        <td>minecraft:stony_peaks</td>
+                        <td>Каменистые горные вершины.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Река</td>
+                        <td>minecraft:river</td>
+                        <td>Протока воды между биомами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Пляж</td>
+                        <td>minecraft:beach</td>
+                        <td>Полоса песка у воды.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Бледный сад</td>
+                        <td>minecraft:pale_garden</td>
+                        <td>Сад с бледными цветами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Пустыня</td>
+                        <td>minecraft:desert</td>
+                        <td>Безводный биом с песчаными дюнами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Саванна</td>
+                        <td>minecraft:savanna</td>
+                        <td>Открытый биом с акациями и высокой травой.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Плато саванны</td>
+                        <td>minecraft:savanna_plateau</td>
+                        <td>Плато в саванне.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Выветренная саванна</td>
+                        <td>minecraft:windswept_savanna</td>
+                        <td>Саванна с сильным ветром.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Пустошь</td>
+                        <td>minecraft:badlands</td>
+                        <td>Жаркий биом с красной почвой.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Лесистая пустошь</td>
+                        <td>minecraft:wooded_badlands</td>
+                        <td>Пустошь с деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Выветренная пустошь</td>
+                        <td>minecraft:eroded_badlands</td>
+                        <td>Разрушенная пустошь.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Тёплый океан</td>
+                        <td>minecraft:warm_ocean</td>
+                        <td>Океан с тёплой водой.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Пышные пещеры</td>
+                        <td>minecraft:lush_caves</td>
+                        <td>Подземный биом с растительностью.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Карстовая пещера</td>
+                        <td>minecraft:dripstone_caves</td>
+                        <td>Пещера с сталактитами и сталагмитами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Тёмные глубины</td>
+                        <td>minecraft:deep_dark</td>
+                        <td>Биом с древним городом.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Пустоши Нижнего мира</td>
+                        <td>minecraft:nether_wastes</td>
+                        <td>Основной биом Нижнего мира.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Базальтовые дельты</td>
+                        <td>minecraft:basalt_deltas</td>
+                        <td>Биом с базальтовыми образованиями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Искажённый лес</td>
+                        <td>minecraft:warped_forest</td>
+                        <td>Лес с искажёнными деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Багровый лес</td>
+                        <td>minecraft:crimson_forest</td>
+                        <td>Лес с багровыми деревьями.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Долина песка душ</td>
+                        <td>minecraft:soul_sand_valley</td>
+                        <td>Биом с песком душ.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Край</td>
+                        <td>minecraft:the_end</td>
+                        <td>Измерение с пурпурными островами.</td>
+                        <td>Java, Bedrock</td>
+                    </tr>
+                    <tr>
+                        <td>Островки Края</td>
+                        <td>minecraft:small_end_islands</td>
+                        <td>Маленькие острова в измерении Края.</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Равнины Края</td>
+                        <td>minecraft:end_midlands</td>
+                        <td>Равнины в измерении Края.</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Возвышенности Края</td>
+                        <td>minecraft:end_highlands</td>
+                        <td>Возвышенности в измерении Края.</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Окраины Края</td>
+                        <td>minecraft:end_barrens</td>
+                        <td>Безжизненные земли в измерении Края.</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Пустота</td>
+                        <td>minecraft:the_void</td>
+                        <td>Биом без генерации блоков.</td>
+                        <td>Java</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2 class="invise">Структуры</h2>
+            <table id="structures-table">
+                <thead>
+                    <tr>
+                        <th>Название (на русском)</th>
+                        <th>ID</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Структуры -->
+                    <tr>
+                        <td>Древний город</td>
+                        <td>minecraft:ancient_city</td>
+                        <td>Тёмные глубины. Длинные коридоры из глубинного сланца, ведущие к центральному сооружению с похожей на портал структурой, обрамлённой укреплённым глубинным сланцем и напоминающей голову хранителя.</td>
+                    </tr>
+                    <tr>
+                        <td>Заброшенная шахта</td>
+                        <td>minecraft:mineshaft</td>
+                        <td>Любой биом Верхнего мира, кроме тёмных глубин. Сеть подземных туннелей с сильно повреждённой железной дорогой, на которой иногда стоят вагонетки с сундуками.</td>
+                    </tr>
+                    <tr>
+                        <td>Камеры испытаний</td>
+                        <td>minecraft:trial_chambers</td>
+                        <td>Любой биом Верхнего мира, кроме тёмных глубин. Множество комнат, построенных из разных видов меди и туфа и соединяемых коридорами.</td>
+                    </tr>
+                    <tr>
+                        <td>Клад</td>
+                        <td>minecraft:buried_treasure</td>
+                        <td>Пляж, Заснеженный пляж, Каменистый берег. Зарытый сундук с ценными ресурсами, который можно найти на побережье.</td>
+                    </tr>
+                    <tr>
+                        <td>Крепость</td>
+                        <td>minecraft:stronghold</td>
+                        <td>Любой биом Верхнего мира. Лабиринт из каменного кирпича со множеством комнат, в одной из которых расположен чаще всего закрытый портал Края.</td>
+                    </tr>
+                    <tr>
+                        <td>Руины былых времён</td>
+                        <td>minecraft:ruins_of_old</td>
+                        <td>Джунгли, Многолетний березняк, Многолетняя сосновая тайга, Многолетняя еловая тайга, Заснеженная тайга, Тайга. Группа разрушенных сооружений, похожая на древнее поселение.</td>
+                    </tr>
+                    <tr>
+                        <td>Аванпост разбойников</td>
+                        <td>minecraft:raiders_outpost</td>
+                        <td>Равнины, Пустыня, Саванна, Тайга, Заснеженные равнины и др. Группа структур, среди которых доминирующее положение занимает сторожевая башня.</td>
+                    </tr>
+                    <tr>
+                        <td>Деревня</td>
+                        <td>minecraft:village</td>
+                        <td>Равнины, Луг, Пустыня, Саванна, Тайга, Заснеженные равнины и др. Поселение с жилыми домами и хозяйственными строениями.</td>
+                    </tr>
+                    <tr>
+                        <td>Заброшенная деревня</td>
+                        <td>minecraft:abandoned_village</td>
+                        <td>Равнины, Луг, Пустыня, Саванна, Тайга, Заснеженные равнины и др. Обветшалая деревня, населённая зомби-жителями.</td>
+                    </tr>
+                    <tr>
+                        <td>Иглу</td>
+                        <td>minecraft:igloo</td>
+                        <td>Заснеженные равнины, Заснеженная тайга, Заснеженные склоны. Снежное жилище с печью, кроватью и редстоун-факелом внутри.</td>
+                    </tr>
+                    <tr>
+                        <td>Лесной особняк</td>
+                        <td>minecraft:woodland_mansion</td>
+                        <td>Тёмный лес. Гигантское здание, построенное из тёмнодубовых досок и имеющее булыжный фундамент.</td>
+                    </tr>
+                    <tr>
+                        <td>Хижина ведьмы</td>
+                        <td>minecraft:witch_hut</td>
+                        <td>Болото. Небольшое свайное жилище из древесины, внутри которого находятся котёл и верстак.</td>
+                    </tr>
+                    <tr>
+                        <td>Храм в джунглях</td>
+                        <td>minecraft:jungle_temple</td>
+                        <td>Джунгли. Заросшее булыжное сооружение с двумя сундуками, один из которых защищён ловушкой.</td>
+                    </tr>
+                    <tr>
+                        <td>Храм в пустыне</td>
+                        <td>minecraft:desert_pyramid</td>
+                        <td>Пустыня. Большая пирамидальная структура из песчаника, под которой спрятана гробница с четырьмя сундуками и ловушкой.</td>
+                    </tr>
+                    <tr>
+                        <td>Разрушенный портал Нижнего мира</td>
+                        <td>minecraft:ruined_portal</td>
+                        <td>Любой биом Верхнего мира, кроме тёмных глубин. Частично разрушенный портал Нижнего мира разных форм и размеров.</td>
+                    </tr>
+                    <tr>
+                        <td>Затонувший корабль</td>
+                        <td>minecraft:shipwreck</td>
+                        <td>Глубокий океан, Океан и др. Ветхое деревянное судно, содержащее до трёх сундуков с добычей.</td>
+                    </tr>
+                    <tr>
+                        <td>Подводная крепость</td>
+                        <td>minecraft:underwater_ruin</td>
+                        <td>Глубокий океан, Глубокий замёрзший океан и др. Огромный призмариновый храм, охраняемый стражами.</td>
+                    </tr>
+                    <tr>
+                        <td>Подводные руины</td>
+                        <td>minecraft:ocean_ruins</td>
+                        <td>Глубокий океан, Океан и др. Группа мелких разрушенных строений из каменных кирпичей или песчаника.</td>
+                    </tr>
+                    <tr>
+                        <td>Крепость Нижнего мира</td>
+                        <td>minecraft:nether_fortress</td>
+                        <td>Любой биом Нижнего мира. Большое сооружение из кирпичей Нижнего мира в виде комплекса высоких башен.</td>
+                    </tr>
+                    <tr>
+                        <td>Развалины бастиона</td>
+                        <td>minecraft:bastion_remnant</td>
+                        <td>Пустоши Нижнего мира, Багровый лес и др. Руины огромного сооружения, похожего на замок, построенного из чернокаменных блоков.</td>
+                    </tr>
+                    <tr>
+                        <td>Ископаемые останки Нижнего мира</td>
+                        <td>minecraft:nether_fossils</td>
+                        <td>Долина песка душ. Вариант обычных ископаемых останков, но более разрушенный и полностью состоящий из костяных блоков.</td>
+                    </tr>
+                    <tr>
+                        <td>Город Края</td>
+                        <td>minecraft:end_city</td>
+                        <td>Край. Разветвлённая сеть высоких башен, построенных из пурпурных блоков, каменных кирпичей Края и фиолетового стекла.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2 class="invise">Мобы</h2>
+            <table id="mobs-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Биомы обитания</th>
+                        <th>Лут и шанс</th>
+                        <th>Здоровье</th>
+                        <th>Фото</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Мобы -->
+                    <tr>
+                        <td>Летучая мышь</td>
+                        <td>Пещеры</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>3</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Летучая_мышь.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Кошка</td>
+                        <td>Деревни, Хижины ведьм</td>
+                        <td>Нить (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Полосатая_кошка.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Курица</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Перья (100%), Сырая курица (100%), Яйцо (периодически)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>2</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Курица_JE2_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Треска</td>
+                        <td>Океан</td>
+                        <td>Сырая треска (100%), Кость (5%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1.5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Треска_(моб).png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Корова</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Кожа (100%), Сырая говядина (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Корова_JE5_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Лиса</td>
+                        <td>Тайга, Снежная тайга</td>
+                        <td>Перо (5%), Кроличья лапка (2%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Лиса.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Лошадь</td>
+                        <td>Равнины, Саванна</td>
+                        <td>Кожа (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>7.5 to 15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Лошадь.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Овца</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Шерсть (100%), Сырая баранина (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>4</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Белая_овца_JE3_BE6.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Грибная корова</td>
+                        <td>Грибной остров</td>
+                        <td>Красные грибы (100%), Кожа (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Грибная_корова.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Оцелот</td>
+                        <td>Джунгли</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Оцелот.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Попугай</td>
+                        <td>Джунгли</td>
+                        <td>Перья (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>3</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Красный_попугай.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Свинья</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Сырая свинина (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Свинья_JE3_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Кролик</td>
+                        <td>Пустыня, Тайга</td>
+                        <td>Кроличья лапка (10%), Кроличья шкура (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1.5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Коричневый_кролик.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Лосось</td>
+                        <td>Реки, Океан</td>
+                        <td>Сырой лосось (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1.5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Лосось_(моб).png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Снежный голем</td>
+                        <td>Создается игроком</td>
+                        <td>Снежки (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>2</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Снежный_голем.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Спрут</td>
+                        <td>Океан</td>
+                        <td>Инк (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Спрут_JE2_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Страйдер</td>
+                        <td>Нижний мир</td>
+                        <td>Нога страйдера (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Страйдер.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Тропическая рыба</td>
+                        <td>Океан</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1.5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Тропическая_рыба_2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Черепаха</td>
+                        <td>Пляжи</td>
+                        <td>Панцирь черепахи (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Черепаха.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Деревенский житель</td>
+                        <td>Деревни</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Обычный_деревенский_житель_равнин.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Странствующий торговец</td>
+                        <td>Любой биом</td>
+                        <td>Эмerald (при убийстве)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Торговец.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Аксолотль</td>
+                        <td>Подземные озёра</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>7</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Аксолотль-лейкист_JE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Лягушка</td>
+                        <td>Лес, Пустоши</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Болотная_лягушка_BE1.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Тихоня</td>
+                        <td>Любой биом</td>
+                        <td>Желе (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Тихоня_JE1_BE1.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Верблюд</td>
+                        <td>Пустыня</td>
+                        <td>Кожа (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>16</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Camel.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Нюхач</td>
+                        <td>Любой биом</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Нюхля.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Броненосец</td>
+                        <td>Саванна</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Броненосец.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Пчела</td>
+                        <td>Лес, Саванна</td>
+                        <td>Мед (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Пчела.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Пещерный паук</td>
+                        <td>Пещеры</td>
+                        <td>Нить (100%), Яд (25%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>6</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Пещерный_паук.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Дельфин</td>
+                        <td>Океан</td>
+                        <td>Рыба (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Дельфин.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Странник края</td>
+                        <td>Край</td>
+                        <td>Порошок звезды (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Странник_Края.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Железный голем</td>
+                        <td>Создается игроком</td>
+                        <td>Железо (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>50</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Железный_голем_(Texture_Update).png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Лама</td>
+                        <td>Саванна</td>
+                        <td>Шерсть (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>7.5 to 15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Кремовая_лама.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Панда</td>
+                        <td>Бамбуковые леса</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5 to 10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Панда.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Пиглин</td>
+                        <td>Нижний мир</td>
+                        <td>Золотые предметы (различные)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>8</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Пиглин.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Белый медведь</td>
+                        <td>Снежные биомы</td>
+                        <td>Мясо (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Белый_медведь.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Иглобрюх</td>
+                        <td>Океан</td>
+                        <td>Ядовитая шипы (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1.5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Иглобрюх_большой_(моб).png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Паук</td>
+                        <td>Любой биом</td>
+                        <td>Нить (100%), Яд (25%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>8</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Паук_JE3_BE3.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Волк</td>
+                        <td>Лес</td>
+                        <td>Нет</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>4 (wild)</span>,
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>20 (tamed)</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Волк.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Зомбифицированный пиглин</td>
+                        <td>Нижний мир</td>
+                        <td>Золотые предметы (различные)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Зомбифицированный_пиглин_JE8.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Коза</td>
+                        <td>Горы</td>
+                        <td>Молоко (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Коза.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Ифрит</td>
+                        <td>Крепости Нижнего мира</td>
+                        <td>Огненный стержень (50%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Ифрит.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Крипер</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Порох (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Крипер_JE2_BE1.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Утопленник</td>
+                        <td>Океан</td>
+                        <td>Трофеи утопленника (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Утопленник.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Страж</td>
+                        <td>Подводные крепости</td>
+                        <td>Призмариновые кристаллы (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Страж.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Чешуйница</td>
+                        <td>Нижний мир</td>
+                        <td>Чешуя (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Чешуйница.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Гаст</td>
+                        <td>Нижний мир</td>
+                        <td>Слезы гаста (100%), Порох (30%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>5</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Гаст_JE2_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Хоглин</td>
+                        <td>Нижний мир</td>
+                        <td>Сырая говядина (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>20</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Хоглин.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Бриз</td>
+                        <td>Нижний мир</td>
+                        <td>Крыло бриза (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/3F3F.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Зомби</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Гнилая плоть (100%), Железный слиток (2.5%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Зомби_JE3_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Слизень</td>
+                        <td>Любой биом</td>
+                        <td>Слизь (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>1 (small)</span>,
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>2 (medium)</span>,
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>4 (big)</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Слизень_JE3_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Фантом</td>
+                        <td>Ночью</td>
+                        <td>Фантомное перо (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Фантом.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Жестокий пиглин</td>
+                        <td>Нижний мир</td>
+                        <td>Золотые предметы (различные)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>8</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Жестокий_пиглин.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Разоритель</td>
+                        <td>Руины Нижнего мира</td>
+                        <td>Разрушитель (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Разоритель.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Шалкер</td>
+                        <td>Крепости Нижнего мира</td>
+                        <td>Голова шалкера (50%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Шалкер.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Скелет</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Кость (100%), Стрела (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>10</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Скелет_JE6_BE4.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Досажатель</td>
+                        <td>Нижний мир</td>
+                        <td>Нагреватель (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>-</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Досаждатель.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Ведьма</td>
+                        <td>Любой биом Верхнего мира</td>
+                        <td>Зелья (различные)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>13</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Ведьма.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Зоглин</td>
+                        <td>Нижний мир</td>
+                        <td>Кожа (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>20</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Зоглин.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Хранитель</td>
+                        <td>Подводные храмы</td>
+                        <td>Прима-жемчуг (100%)</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>15</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Хранитель_JE1_BE1.png" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Эндер Дракон</td>
+                        <td>Край</td>
+                        <td>Яйцо дракона (100%, при первом убийстве), 12000 опыта</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>100</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Ender_Dragon.gif" class="photo-cell-image-item"></td>
+                    </tr>
+                    <tr>
+                        <td>Визер</td>
+                        <td>Создается игроком</td>
+                        <td>-</td>
+                        <td>
+                            <span style="display: flex; justify-content: center;" >
+                                <img style="margin-right: 5px;" src="assets/img/icons/heart.png" alt="" width="20"><span>150</span>
+                            </span>
+                        </td>
+                        <td class="photo-cell"><img src="assets/img/mobs/Wither_JE2_BE2.png" class="photo-cell-image-item"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <h2 class="invise">Правила игры (Gamerules)</h2>
+            <table id="gamerules-table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Стандартное значение</th>
+                        <th>Тип</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Правила -->
+                    <tr>
+                        <td>announceAdvancements</td>
+                        <td>Должны ли достижения объявляться в чате.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>blockExplosionDropDecay</td>
+                        <td>Должны ли дропы блоков падать со всех блоков (false) или случайно (true) в зависимости от расстояния до центра взрыва блока (например, при использовании кровати в измерениях, отличных от Оверворлда).</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>commandBlocksEnabled</td>
+                        <td>Должны ли командные блоки быть включены в игре.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>commandBlockOutput</td>
+                        <td>Должны ли командные блоки уведомлять админов, когда они выполняют команды.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>commandModificationBlockLimit</td>
+                        <td>Управляет максимальным количеством изменяемых блоков при использовании команд /clone, /fill или /fillbiome.</td>
+                        <td>32768</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>disableElytraMovementCheck</td>
+                        <td>Должен ли сервер пропускать проверку скорости игрока, когда игрок использует эльтру. Часто помогает устранить подергивание из-за лагов в мультиплеере.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>disablePlayerMovementCheck</td>
+                        <td>Должен ли сервер пропускать проверку скорости игрока.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>disableRaids</td>
+                        <td>Отключены ли набеги.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doDaylightCycle</td>
+                        <td>Должен ли цикл дня и фазы Луны прогрессировать.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doEntityDrops</td>
+                        <td>Должны ли не-мобовые сущности иметь дропы.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doFireTick</td>
+                        <td>Должна ли огонь распространяться и естественным образом гаснуть.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doInsomnia</td>
+                        <td>Должны ли фантомы появляться ночью.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doImmediateRespawn</td>
+                        <td>Должны ли игроки возрождаться сразу без экрана смерти.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doLimitedCrafting</td>
+                        <td>Должны ли игроки создавать только те рецепты, которые они разблокировали.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doMobLoot</td>
+                        <td>Должны ли мобы выбрасывать предметы и шары опыта.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doMobSpawning</td>
+                        <td>Должны ли мобы естественно появляться. Не влияет на спавнеры монстров.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doPatrolSpawning</td>
+                        <td>Должны ли патрули появляться.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doTileDrops</td>
+                        <td>Должны ли блоки иметь дропы.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doTraderSpawning</td>
+                        <td>Должны ли бродячие торговцы появляться.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doVinesSpread</td>
+                        <td>Должны ли лианы распространяться на другие блоки. Каве-лианы, слезоточивые лианы и крутящиеся лианы не затрагиваются.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doWeatherCycle</td>
+                        <td>Должна ли погода меняться естественным образом. Команда /weather всё ещё может менять погоду.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>doWardenSpawning</td>
+                        <td>Должны ли стражи появляться.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>drowningDamage</td>
+                        <td>Должен ли игрок получать урон при утоплении.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>enderPearlsVanishOnDeath</td>
+                        <td>Управляет тем, исчезают ли брошенные жемчуга эндеров при смерти игрока.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>fallDamage</td>
+                        <td>Должен ли игрок получать урон от падения.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>fireDamage</td>
+                        <td>Должен ли игрок получать урон от огня, лавы, костров или магмы.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>forgiveDeadPlayers</td>
+                        <td>Заставляет нейтральных мобов переставать злиться, когда целевой игрок умирает поблизости.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>freezeDamage</td>
+                        <td>Должен ли игрок получать урон внутри порошкового снега.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>globalSoundEvents</td>
+                        <td>Должны ли некоторые звуковые события быть слышны всем игрокам независимо от местоположения.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>functionCommandLimit</td>
+                        <td>Максимальное количество команд, которые могут быть выполнены командой /function за раз.</td>
+                        <td>10000</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>keepInventory</td>
+                        <td>Должен ли игрок сохранять предметы и опыт в инвентаре после смерти.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>lavaSourceConversion</td>
+                        <td>Разрешает ли образование новых источников лавы.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>logAdminCommands</td>
+                        <td>Должны ли команды администраторов записываться в журнал сервера.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>maxCommandChainLength</td>
+                        <td>Максимальная длина цепочки команд, которые могут быть выполнены за один тик. Применяется к командным блокам и функциям.</td>
+                        <td>65536</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>maxCommandForkCount</td>
+                        <td>Неизвестно (не документировано).</td>
+                        <td>65536</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>maxEntityCramming</td>
+                        <td>Максимальное количество толкаемых сущностей, которое может толкать моб или игрок, прежде чем получить 6♥♥♥ урона от тесноты за полсекунды. Значение 0 или ниже отключает правило. Влияет на игроков (кроме режима Spectator), мобов (кроме летучих мышей), а также лодки и вагонетки.</td>
+                        <td>24</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>minecartMaxSpeed</td>
+                        <td>Максимальная скорость, которой могут достигать вагонетки.</td>
+                        <td>8</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>mobExplosionDropDecay</td>
+                        <td>Должны ли дропы блоков падать со всех блоков (false) или случайно (true) в зависимости от расстояния до центра взрыва моба (например, взрыв крипера).</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>mobGriefing</td>
+                        <td>Должны ли криперы, зомби, эндермены, гасты, витеры, эндракристаллы и другие мобы изменять блоки, а также подбирать предметы.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>naturalRegeneration</td>
+                        <td>Должен ли игрок регенерировать здоровье естественным путём, если его уровень голода достаточно высок (не влияет на внешнее исцеление, например, золотыми яблоками или эффектом Регенерации).</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>playersNetherPortalCreativeDelay</td>
+                        <td>Управляет количеством тактов, которые игрок в режиме Creative должен ждать в портале Нether для перемещения между измерениями.</td>
+                        <td>1</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>playersNetherPortalDefaultDelay</td>
+                        <td>Управляет количеством тактов, которые игрок в режимах Survival или Adventure должен ждать в портале Нether для перемещения между измерениями.</td>
+                        <td>80</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>playersSleepingPercentage</td>
+                        <td>Процент игроков в Оверворлде, который должен лечь спать, чтобы пропустить ночь. Значение 0 или меньше позволит пропустить ночь одному игроку, а значение больше 100% сделает невозможным пропуск nightskip.</td>
+                        <td>100</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>projectilesCanBreakBlocks</td>
+                        <td>Должны ли снаряды (например, трезубец) ломать блоки (например, направленные каменные сосульки).</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>pvp</td>
+                        <td>Должны ли игроки иметь возможность драться друг с другом.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>randomTickSpeed</td>
+                        <td>Как часто происходит случайный блочный тик (например, рост растений, увядание листьев и т.д.) на каждый секционный чанк за игровой тик. Значение 0 или ниже отключает случайные тики, более высокие числа увеличивают частоту тиков. Высокие значения делают рост и увядание мгновенными.</td>
+                        <td>3</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>recipesUnlock</td>
+                        <td>Должен ли игрок собирать предметы для разблокировки рецептов в книге рецептов.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>reducedDebugInfo</td>
+                        <td>Должна ли отладочная информация показывать всю или сокращённую информацию, а также должны ли работать эффекты F3 + B (хитбоксы сущностей) и F3 + G (границы чанков).</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>respawnBlocksExplode</td>
+                        <td>Предотвращает взрывы кроватей/точек возрождения в других измерениях.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>sendCommandFeedback</td>
+                        <td>Должен ли вывод команд, выполненных игроком, отображаться в чате. Также влияет на то, хранят ли командные блоки свой выходной текст по умолчанию.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>showBorderEffect</td>
+                        <td>Должны ли блоки границы создавать красные частицы, поднимающиеся вверх, чтобы указывать на границу.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>showCoordinates</td>
+                        <td>Должны ли координаты игрока отображаться.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>showDeathMessages</td>
+                        <td>Должны ли сообщения о смерти появляться в чате, когда игрок умирает. Также влияет на то, отправляются ли сообщения владельцу питомца, когда питомец умирает.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>showTags</td>
+                        <td>Скрывает списки "Можно разместить на" и "Можно разрушить" в описании предметов, а также индикаторы блокировки предметов.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>snowAccumulationHeight</td>
+                        <td>Максимальное количество слоёв снега, которые могут накапливаться на каждом блоке.</td>
+                        <td>1</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>spawnChunkRadius</td>
+                        <td>Управляет радиусом спавн-чанков.</td>
+                        <td>2</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>spawnRadius</td>
+                        <td>Количество блоков вокруг мировых координат спавна, где игрок появляется при первом входе на сервер или после смерти без личной точки возрождения. Не влияет на серверы, где режим игры установлен как Adventure.</td>
+                        <td>10</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>spectatorsGenerateChunks</td>
+                        <td>Должны ли игроки в режиме Spectator генерировать чанки.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>tntExplodes</td>
+                        <td>Должна ли ТНТ взрываться после активации.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>tntExplosionDropDecay</td>
+                        <td>Должны ли дропы блоков падать со всех блоков (false) или случайно (true) в зависимости от расстояния до центра взрыва ТНТ.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>universalAnger</td>
+                        <td>Должны ли разозлённые нейтральные мобы атаковать любого поблизости игрока, а не только того, кто их разозлил. Работает лучше, если параметр forgiveDeadPlayers выключен.</td>
+                        <td>false</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>waterSourceConversion</td>
+                        <td>Разрешает ли образование новых источников воды.</td>
+                        <td>true</td>
+                        <td>bool</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <table id="ores-table">
+                <h2 class="invise">Руды</h2>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>ID</th>
+                        <th>Описание</th>
+                        <th>Высота</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Угольная руда</td>
+                        <td>minecraft:coal_ore</td>
+                        <td>Располагается в горных и подземных биомах. Основной источник угля.</td>
+                        <td>Y 0 - 320 (чаще всего на Y 95)</td>
+                    </tr>
+                    <tr>
+                        <td>Железная руда</td>
+                        <td>minecraft:iron_ore</td>
+                        <td>Используется для крафта железных предметов. Встречается в пещерах и горах.</td>
+                        <td>Y -64 - 320 (чаще всего на Y 15)</td>
+                    </tr>
+                    <tr>
+                        <td>Медная руда</td>
+                        <td>minecraft:copper_ore</td>
+                        <td>Используется для крафта блоков меди и громоотводов.</td>
+                        <td>Y -16 - 112 (чаще всего на Y 48)</td>
+                    </tr>
+                    <tr>
+                        <td>Золотая руда</td>
+                        <td>minecraft:gold_ore</td>
+                        <td>Используется для создания золотых инструментов и брони.</td>
+                        <td>Y -64 - 32 (чаще всего на Y -16)</td>
+                    </tr>
+                    <tr>
+                        <td>Глубинная золотая руда</td>
+                        <td>minecraft:deepslate_gold_ore</td>
+                        <td>Редкий вид золотой руды, встречающийся в глубоких слоях.</td>
+                        <td>Y -64 - 32 (чаще всего на Y -16)</td>
+                    </tr>
+                    <tr>
+                        <td>Лазуритовая руда</td>
+                        <td>minecraft:lapis_ore</td>
+                        <td>Источник лазурита для зачарования.</td>
+                        <td>Y -64 - 64 (чаще всего на Y 0)</td>
+                    </tr>
+                    <tr>
+                        <td>Редстоуновая руда</td>
+                        <td>minecraft:redstone_ore</td>
+                        <td>Используется в механизмах.</td>
+                        <td>Y -64 - 16 (чаще всего на Y -59)</td>
+                    </tr>
+                    <tr>
+                        <td>Алмазная руда</td>
+                        <td>minecraft:diamond_ore</td>
+                        <td>Источник алмазов, необходимых для брони, инструментов и зачарования.</td>
+                        <td>Y -64 - 16 (чаще всего на Y -59)</td>
+                    </tr>
+                    <tr>
+                        <td>Изумрудная руда</td>
+                        <td>minecraft:emerald_ore</td>
+                        <td>Самая редкая руда, используется для торговли с жителями.</td>
+                        <td>Y -16 - 320 (чаще всего на Y 236)</td>
+                    </tr>
+                    <tr>
+                        <td>Кварцевая руда</td>
+                        <td>minecraft:nether_quartz_ore</td>
+                        <td>Добывается в Нижнем мире. Источник кварца.</td>
+                        <td>Встречается в Нижнем мире на любой высоте</td>
+                    </tr>
+                    <tr>
+                        <td>Древний обломок</td>
+                        <td>minecraft:ancient_debris</td>
+                        <td>Используется для создания незеритовых слитков.</td>
+                        <td>Y 8 - 22 (чаще всего на Y 15)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="info-section">
+            <table id="effects-table">
+                <h2 class="invise">Эффекты</h2>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>ID</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Скорость</td>
+                        <td>speed</td>
+                        <td>Увеличит скорость передвижения и ширину обзора.</td>
+                    </tr>
+                    <tr>
+                        <td>Замедление</td>
+                        <td>slowness</td>
+                        <td>Снижает скорость и ширину обзора.</td>
+                    </tr>
+                    <tr>
+                        <td>Проворность</td>
+                        <td>haste</td>
+                        <td>Можно ломать блоки быстрее на 20 процентов с каждым уровнем.</td>
+                    </tr>
+                    <tr>
+                        <td>Усталость</td>
+                        <td>mining_fatigue</td>
+                        <td>Блоки разрушаются медленнее на 20 процентов.</td>
+                    </tr>
+                    <tr>
+                        <td>Сила</td>
+                        <td>strength</td>
+                        <td>Увеличение урона с каждым уровнем.</td>
+                    </tr>
+                    <tr>
+                        <td>Исцеление</td>
+                        <td>instant_health</td>
+                        <td>Быстрое лечение за каждый такт времени.</td>
+                    </tr>
+                    <tr>
+                        <td>Быстрый урон</td>
+                        <td>instant_damage</td>
+                        <td>1.5 сердца урона за определенный срок.</td>
+                    </tr>
+                    <tr>
+                        <td>Прыгучесть</td>
+                        <td>jump_boost</td>
+                        <td>Увеличивает высоту прыжка.</td>
+                    </tr>
+                    <tr>
+                        <td>Тошнота</td>
+                        <td>nausea</td>
+                        <td>Искажает картинку в игре.</td>
+                    </tr>
+                    <tr>
+                        <td>Регенерация</td>
+                        <td>regeneration</td>
+                        <td>Каждые 5 секунд восстанавливает 1 единицу здоровья.</td>
+                    </tr>
+                    <tr>
+                        <td>Сопротивление</td>
+                        <td>resistance</td>
+                        <td>Снижает получаемый урон.</td>
+                    </tr>
+                    <tr>
+                        <td>Стойкость огню</td>
+                        <td>fire_resistance</td>
+                        <td>Снижает урон от огня.</td>
+                    </tr>
+                    <tr>
+                        <td>Подводное дыхание</td>
+                        <td>water_breathing</td>
+                        <td>Снижает потери воздуха под водой.</td>
+                    </tr>
+                    <tr>
+                        <td>Невидимость</td>
+                        <td>invisibility</td>
+                        <td>Игрок становится прозрачным.</td>
+                    </tr>
+                    <tr>
+                        <td>Слепота</td>
+                        <td>blindness</td>
+                        <td>Игрок не может бегать и видит только в радиусе 3-х блоков.</td>
+                    </tr>
+                    <tr>
+                        <td>Ночное зрение</td>
+                        <td>night_vision</td>
+                        <td>Максимальная яркость зрения в любом месте.</td>
+                    </tr>
+                    <tr>
+                        <td>Голод</td>
+                        <td>hunger</td>
+                        <td>Скорость снижения уровня голода увеличивается.</td>
+                    </tr>
+                    <tr>
+                        <td>Слабость</td>
+                        <td>weakness</td>
+                        <td>Урон, наносимый главным героем, снижен.</td>
+                    </tr>
+                    <tr>
+                        <td>Отравление</td>
+                        <td>poison</td>
+                        <td>Каждые 2,5 секунды здоровье снижается на 1 единицу.</td>
+                    </tr>
+                    <tr>
+                        <td>Иссушение</td>
+                        <td>wither</td>
+                        <td>Наносит 1 единицу урона каждые 4 секунды.</td>
+                    </tr>
+                    <tr>
+                        <td>Прилив здоровья</td>
+                        <td>health_boost</td>
+                        <td>Дополнительные 4 единицы здоровья, которые восстанавливаются.</td>
+                    </tr>
+                    <tr>
+                        <td>Поглощение</td>
+                        <td>absorption</td>
+                        <td>Дополнительные 4 единицы здоровья, которые не восстанавливаются.</td>
+                    </tr>
+                    <tr>
+                        <td>Насыщение</td>
+                        <td>saturation</td>
+                        <td>Быстрое восстановление уровня голода.</td>
+                    </tr>
+                    <tr>
+                        <td>Свечение</td>
+                        <td>glowing</td>
+                        <td>Главный герой будет светиться, даже через стены.</td>
+                    </tr>
+                    <tr>
+                        <td>Левитация</td>
+                        <td>levitation</td>
+                        <td>Главный герой взлетает на 128 блоков, а потом падает.</td>
+                    </tr>
+                    <tr>
+                        <td>Удача</td>
+                        <td>luck</td>
+                        <td>Шанс поимки ценных предметов на рыбалке выше.</td>
+                    </tr>
+                    <tr>
+                        <td>Невезение</td>
+                        <td>unluck</td>
+                        <td>Шанс поимки ценных предметов на рыбалке ниже.</td>
+                    </tr>
+                    <tr>
+                        <td>Легкое падение</td>
+                        <td>slow_falling</td>
+                        <td>Медленное падение + отсутствие урона от падения.</td>
+                    </tr>
+                    <tr>
+                        <td>Сила моря</td>
+                        <td>conduit_power</td>
+                        <td>Улучшенное зрение под водой + Увеличенная скорость разрушения блоков под водой + Бесконечный воздух.</td>
+                    </tr>
+                    <tr>
+                        <td>Грация дельфина</td>
+                        <td>dolphins_grace</td>
+                        <td>Скорость плавания увеличена.</td>
+                    </tr>
+                    <tr>
+                        <td>Клеймо бедствий</td>
+                        <td>bad_omen</td>
+                        <td>Начало атаки разбойников на деревню.</td>
+                    </tr>
+                    <tr>
+                        <td>Деревенский герой</td>
+                        <td>hero_of_the_village</td>
+                        <td>Подарки и скидки игроку от деревенских жителей.</td>
+                    </tr>
+                    <tr>
+                        <td>Тьма</td>
+                        <td>darkness</td>
+                        <td>Около игрока может появляться и исчезать темный туман.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+    </main>
+
+    <button title="Вернуться наверх" id="back-to-top-btn" class="hidden">▲</button>
+    <div id="notification" class="hidden-notify"></div>
+
+    <script src="js/ui.js"></script>
+    <script src="js/copy.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
